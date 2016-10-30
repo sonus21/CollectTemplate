@@ -56,6 +56,9 @@ class Command(BaseCommand):
 
     def handle(self, *apps, **options):
         exclude_apps = options.get('AppName', [])
+        if exclude_apps is None:
+            exclude_apps = []
+            
         if apps and exclude_apps:
             raise CommandError("--exclude and command arguments are mutual exclusive")
 
