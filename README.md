@@ -5,10 +5,8 @@ different app templates to working project templates directory.
 
 ## Installation
 
-1. git clone https://github.com/sonus21/CollectTemplate.git
-2. cd CollectTemplate
-3. python setup.py
-4. Add CollectTemplate to settings as shown below
+1. pip install CollectTemplate
+2. Add CollectTemplate to settings as shown below
 ```
 INSTALLED_APPS = (
     ...
